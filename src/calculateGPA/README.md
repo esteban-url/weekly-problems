@@ -18,15 +18,15 @@ Key and examples:
 - F = 0 grade points
 
 ```js
-calculateGPA(["A"]);
-4;
+calculateGPA(['A'])
+4
 
-calculateGPA(["F", "F", "F"]);
-0;
+calculateGPA(['F', 'F', 'F'])
+0
 
-calculateGPA(["A", "A-", "B+", "B", "B-"]);
-3.3;
+calculateGPA(['A', 'A-', 'B+', 'B', 'B-'])
+3.3
 
-calculateGPA(["A", "B+", "C-", "A"]);
-3.3;
+calculateGPA(['A', 'B+', 'C-', 'A'])
+3.3
 ```
