@@ -1,35 +1,4 @@
 /**
- Given a set of letter grades, output the GPA (grade point average) of those grades.
-
-Key and examples:
-
-A = 4 grade points
-A- = 3.7 grade points
-B+ = 3.3 grade points
-B = 3 grade points
-B- = 2.7 grade points
-C+ = 2.3 grade points
-C = 2 grade points
-C- = 1.7 grade points
-D+ = 1.3 grade points
-D = 1 grade point
-D- = 0.7 grade points
-F = 0 grade points
-$ calculateGPA(['A'])
-$ 4
-
-$ calculateGPA(['F', 'F', 'F'])
-$ 0
-
-$ calculateGPA(['A', 'A-', 'B+', 'B', 'B-'])
-$ 3.3
-
-$ calculateGPA(['A', 'B+', 'C-', 'A'])
-$ 3.3
-
- */
-
-/**
  * Round a number to a certain number of decimal places
  * @param {number} value to be rounded
  * @param {number} precision number of decimal places
@@ -64,9 +33,7 @@ const gradeKey = {
  * @example calculateGPA(['A', 'B+', 'C-', 'A']) // 3.3
  */
 export const calculateGPA = (grades: string[]): number => {
-  const total = grades.reduce((total, grade) => {
-    return total + gradeKey[grade];
-  }, 0);
+  const total = grades.reduce((total, grade) => total + gradeKey[grade], 0);
 
   return round(total / grades.length, 1);
 };

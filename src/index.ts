@@ -1,4 +1,4 @@
-import { calculateGPA } from "./2022-09-18.js";
+import { calculateGPA } from "./calculateGPA/calculateGPA";
 
 console.log("Questions:");
 console.log("2022-09-18:", calculateGPA(["F", "F", "F"]));
