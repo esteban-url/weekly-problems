@@ -34,7 +34,7 @@ const gradeKey = {
  */
 export const calculateGPA = (grades: string[]): number => {
   const total = grades.reduce((subTotal, grade) => {
-    return subTotal + gradeKey[grade]
+    return subTotal + gradeKey[grade.toLocaleUpperCase()]
   }, 0)
 
   return round(total / grades.length, 1)
