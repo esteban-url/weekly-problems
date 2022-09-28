@@ -23,3 +23,19 @@ export const ordinal = (number: number): string => {
   }
   return `${number}th`
 }
+
+export const ordinal_ = (number: number): string => {
+  const lastDigit = number % 10
+  if (number >= 11 && number <= 13) return `${number}th`
+
+  switch (lastDigit) {
+    case 1:
+      return `${number}st`
+    case 2:
+      return `${number}nd`
+    case 3:
+      return `${number}rd`
+    default:
+      return `${number}th`
+  }
+}
