@@ -9,6 +9,12 @@ describe('fibLike', () => {
   test('(3, 7, 5) should be [3, 7, 10, 17, 27]', () => {
     expect(fibLike(3, 7, 5)).toEqual([3, 7, 10, 17, 27])
   })
+  test('(3, 7, 0) should be []', () => {
+    expect(fibLike(3, 7, 0)).toEqual([])
+  })
+  test('(3, 7, 1) should be [3]', () => {
+    expect(fibLike(3, 7, 1)).toEqual([3])
+  })
 
   test('(1, 1, 11) should be [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]', () => {
     expect(fibLike(1, 1, 11)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89])
@@ -26,5 +32,14 @@ describe('isFibLike', () => {
   })
   test('[1, 2, 3, 4, 5, 6, 7] should be false', () => {
     expect(isFibLike([1, 2, 3, 4, 5, 6, 7])).toBe(false)
+  })
+  test('[] should be false', () => {
+    expect(isFibLike([])).toBe(false)
+  })
+  test('[1] should be false', () => {
+    expect(isFibLike([1])).toBe(false)
+  })
+  test('[1, 2] should be false', () => {
+    expect(isFibLike([1, 2])).toBe(false)
   })
 })

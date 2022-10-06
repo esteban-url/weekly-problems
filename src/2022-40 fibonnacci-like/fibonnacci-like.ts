@@ -17,9 +17,8 @@ export const fibLike = (
   for (let i = 1; i < results - 1; i++) {
     sequence.push(sequence[i - 1] + sequence[i])
   }
-  console.log(sequence)
 
-  return sequence
+  return results < 2 ? sequence.slice(0, results) : sequence
 }
 
 /** Determine if a sequence is “fibonacci - like”
@@ -31,6 +30,7 @@ export const fibLike = (
  * @example isFibLike([1, 2, 3, 4, 5, 6, 7]) // false
  **/
 export const isFibLike = (sequence: number[]): boolean => {
+  if (sequence.length < 3) return false
   for (let i = sequence.length - 1; i > 1; i--) {
     if (sequence[i] !== sequence[i - 1] + sequence[i - 2]) return false
   }
