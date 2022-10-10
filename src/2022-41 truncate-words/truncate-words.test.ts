@@ -3,7 +3,7 @@ import { truncate } from './truncate-words'
 
 describe('truncate', () => {
   test('("*hello* darkness, my ~old_friend", 3) should be "*hel* dar, my ~old_fri"', () => {
-    expect(truncate('*hello* darkness, my ~old_friend')).toBe(
+    expect(truncate('*hello* darkness, my ~old_friend', 3)).toBe(
       '*hel* dar, my ~old_fri'
     )
   })
