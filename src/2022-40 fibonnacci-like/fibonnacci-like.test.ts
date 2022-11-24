@@ -42,4 +42,7 @@ describe('isFibLike', () => {
   test('[1, 2] should be false', () => {
     expect(isFibLike([1, 2])).toBe(false)
   })
+  test('[1, 1, 2] should be true', () => {
+    expect(isFibLike([1, 1, 2])).toBe(true)
+  })
 })
