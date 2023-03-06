@@ -1,6 +1,5 @@
 export const scramble = (phrase: string): string => {
   const words = phrase.split(/(\w+)/)
-  console.log(words)
   const scrambled = words
     .map((word) => {
       const wordLength = word.length
