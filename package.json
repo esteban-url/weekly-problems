@@ -27,6 +27,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@": "snaplet/copycat",
     "nodemon": "^2.0.20"
   }
 }
