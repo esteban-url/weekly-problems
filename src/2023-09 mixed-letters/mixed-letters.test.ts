@@ -1,7 +1,7 @@
 import { describe, expect, test } from '@jest/globals'
 import { scramble } from './mixed-letters'
 
-describe('print Tree', () => {
+describe('mixed letters', () => {
   test('should not scramble any of the words', () => {
     expect(scramble('Our cat ate a rat.')).toBe('Our cat ate a rat.')
   })

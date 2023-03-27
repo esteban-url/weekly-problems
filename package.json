@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@": "snaplet/copycat",
+    "fraction.js": "^4.2.0",
     "nodemon": "^2.0.20"
   }
 }
